@@ -22,50 +22,7 @@ Activation button-> Start button (click) -> button.disabled = true (Stop button)
 
 Activation button-> Stop button (click) -> button.disabled = true (Start button)
 
-CODE SO FAR
-<!DOCTYPE html>
-<html>
+Start/Stop timer buttons
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_stop
+https://dev.to/iblackpanther/start-stop-button-using-js-3p2e
 
-<div class="buttons">
-    <div class="row">
-        <button onclick="myFunction()">PARENT</button>
-    </div><br><br>
-    
-    <div class="row">
-        <button onclick="myFunction2()">CHILD</button>
-            
-        
-	</div>
-
-
-</div>
-<body>
-
-<button onclick="myFunction()">PARENT</button>
-
-<p id="parent"></p>
-
-<button onclick="myFunction2()">CHILD</button>
-
-<p id="child"></p>
-
-<button onclick="myFunction()">Click me</button>
-
-<p id="demo"></p>
-
-<script>
-
-const button = document.querySelector('disabled')
-
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";	
-  document.getElementById("child").disabled = true;
-}
-
-function myFunction2() {
-	alert("I am an alert box!")
-    }
-</script>
-
-</body>
-</html>
