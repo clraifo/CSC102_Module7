@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div class="buttons">
+
+    <button onclick="myFunction2()">Activate START</button>
+    
+        <p id="activate_start"></p>
+    
+    <button onclick="myFunction()">START</button>
+    
+        <p id="demo"></p>
+        
+    <button onclick="myFunction3()">Activate STOP</button>
+        <p id="activate_stop"></p>
+            
+<body>
+
+    <script>
+
+        const button = document.querySelector('disabled')
+        
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Okay it's started";	
+          //document.getElementById("activate_start").disabled = true;
+        }
+        
+        function myFunction2() {
+            alert("It's going to start!")
+            }
+            
+        function myFunction3() {
+            alert("It's going to stop!")
+            }
+        
+        
+        </script>
+    
+</body>
+
+
+
+
+
+
+</html>
