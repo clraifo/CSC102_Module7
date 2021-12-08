@@ -1,0 +1,71 @@
+Onclick events
+https://www.w3schools.com/jsref/event_onclick.asp
+
+Nested buttons
+https://stackoverflow.com/questions/47128678/nested-buttons-how-to-achieve-separate-functionality
+
+parent/child buttons
+https://codepen.io/hisbvdis/pen/gVWvGM
+
+Onclick event
+https://www.w3schools.com/jsref/event_onclick.asp
+
+Dynamically create button:
+https://stackoverflow.com/questions/7066191/javascript-onclick-onsubmit-for-dynamically-created-button
+
+Disabling and enabling a html input button using javascript
+https://flaviocopes.com/how-to-disable-button-javascript/
+
+https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737
+
+Activation button-> Start button (click) -> button.disabled = true (Stop button)
+
+Activation button-> Stop button (click) -> button.disabled = true (Start button)
+
+CODE SO FAR
+<!DOCTYPE html>
+<html>
+
+<div class="buttons">
+    <div class="row">
+        <button onclick="myFunction()">PARENT</button>
+    </div><br><br>
+    
+    <div class="row">
+        <button onclick="myFunction2()">CHILD</button>
+            
+        
+	</div>
+
+
+</div>
+<body>
+
+<button onclick="myFunction()">PARENT</button>
+
+<p id="parent"></p>
+
+<button onclick="myFunction2()">CHILD</button>
+
+<p id="child"></p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+
+const button = document.querySelector('disabled')
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";	
+  document.getElementById("child").disabled = true;
+}
+
+function myFunction2() {
+	alert("I am an alert box!")
+    }
+</script>
+
+</body>
+</html>
