@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    
+<script>
+
+const roar = function(){
+var myAudio = new Audio('http://lotl.popapostle.com/sounds/LOTL09/roar.wav');
+myAudio.play();
+}
+$('button')
+.html('Click me')
+.on('click', () => roar())
+
+</script>
+
+
+
+
+</body>
+</html>
