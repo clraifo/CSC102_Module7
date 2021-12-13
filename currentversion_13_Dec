@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div class="buttons">
+
+    <button onclick="myFunction1()">Activate START</button>
+
+    <p id="activate_start"></p>
+
+    <button onclick="myFunction2 = setInterval(myFunction2, 1000)">START</button>
+
+    <p id="demo"></p>
+
+    <button onclick="myFunction3()">Activate STOP</button>
+    <p id="activate_stop"></p>
+
+    <button onclick="clearInterval(myFunction2)">STOP</button>
+
+    <body>
+
+        <script>
+
+        var c = 0;
+
+            function myFunction1() {
+                alert("It's going to start!")
+            }
+            
+            function myFunction2() {
+
+               
+                document.getElementById("demo").innerHTML = c--;
+                }
+
+            function myFunction3() {
+                alert("It's going to stop!")
+            }
+        function myFunction4() {
+                // set to stop y clearing interval-->
+
+            }
+            
+            function myCounter() {
+                document.getElementById("demo").innerHTML = ++c;
+            }
+
+        </script>
+
+    </body>
+
+
+
+
+
+
+</html>
